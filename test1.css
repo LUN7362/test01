@@ -1,0 +1,31 @@
+    /*或，這裡打的是','不是'or'*/
+    /*' and ' ', '後面要空開，不能連在一起，他是單獨的*/
+    /* @media screen and (orientation:portrait),(min-width:700px) {
+        body{
+            background-color: brown;
+        }
+     }*/
+     /*可以寫成(可省略 screen and )
+     @media(orientation:portrait),(min-width:700px) {
+        body{
+            background-color: brown;
+        }
+     }*/
+     /* 手機 */
+     @media (max-width:430px) {
+        body{
+            background-color: aqua;
+        }
+     }
+     /* 平板 */
+     @media (min-width:431px) and (max-width:1023px){
+        body{
+            background-color: tomato;
+        }
+     }
+     /* 電腦 */
+     @media (min-width:1024px){
+        body{
+            background-color: chartreuse;
+        }
+     }

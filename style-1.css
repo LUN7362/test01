@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*上面reset*/
+body{
+    background-color: beige;
+    font-family: 微軟正黑體;
+}
+#wrapper{
+    width: 1024px;
+    margin: 0 auto;
+    }
+/* #logo{
+    height: 250px;
+} */
+#logo img{
+    width: 100%;
+    display: block;/*把圖片也變成區塊元素，就不會有白白的*/
+}
+nav{
+    background-color: #b63d32;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+    margin: 0;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #FFC90E;
+}
+#content_in{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 30px 50px;
+}
+#content_in h1{
+    color: #b63d32;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#content_in p{
+    margin-bottom: 20px;
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+#content_in a{
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #b63d32;
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;/*因為從文字元素變成區塊元素，所以用這個對齊*/
+}
+footer{
+    background-color: #71552A;
+    text-align: center;
+}
+footer p{
+    font-size: 10px;
+    color: white;
+    padding: 10px 0;
+}
+@media screen and ( max-width: 1024px){
+    #wrapper{
+        width: 90%;
+    }
+}
+@media screen and ( max-width:640px){
+    nav ul li a{
+        color:chartreuse;
+    }
+    #content_in p{
+        font-size: 20px;
+    }
+}
